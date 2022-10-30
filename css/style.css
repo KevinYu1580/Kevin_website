@@ -1,0 +1,351 @@
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+@media screen and (max-width: 991px) {
+  body {
+    overflow: visible;
+    height: auto;
+  }
+}
+body * {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 3%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+@media screen and (max-width: 991px) {
+  nav {
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.106);
+  }
+}
+nav .links_pc {
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 40px;
+}
+@media screen and (max-width: 991px) {
+  nav .links_pc {
+    display: none;
+  }
+}
+nav .links_pc li a {
+  color: var(--text_color);
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+nav .links_pc li a:hover {
+  color: #ff7b00;
+}
+nav .menu_mb {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+}
+@media screen and (min-width: 992px) {
+  nav .menu_mb {
+    display: none;
+  }
+}
+nav .menu_mb i {
+  font-size: 25px;
+  color: #2d2d2d;
+}
+nav .menu_mb button {
+  background-color: transparent;
+  border: none;
+}
+nav .mb_slider {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(45, 45, 45, 0.9215686275);
+  transform: translateX(100%);
+  transition: 0.5s;
+  padding-top: 10px;
+}
+nav .mb_slider ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+nav .mb_slider li {
+  padding: 20px 0;
+  list-style-type: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  width: 80%;
+  text-align: center;
+}
+nav .mb_slider li a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+nav .menuToggle {
+  transform: none;
+}
+
+.coverText {
+  position: absolute;
+  top: 50%;
+  left: 140px;
+  width: 35%;
+  transform: translate(-10%, -50%);
+}
+@media screen and (max-width: 991px) {
+  .coverText {
+    position: static;
+    transform: none;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+}
+.coverText * {
+  margin: 20px 0;
+}
+.coverText h1 {
+  font-family: "Arvo", serif;
+  font-size: 5rem;
+  color: #ff7b00;
+}
+@media screen and (max-width: 767px) {
+  .coverText h1 {
+    font-size: 3.2rem;
+  }
+}
+.coverText h2 {
+  font-size: 2.5rem;
+  color: #187dc5;
+}
+@media screen and (max-width: 767px) {
+  .coverText h2 {
+    font-size: 2rem;
+  }
+}
+.coverText .personPic_mb {
+  width: 80%;
+  max-width: 272px;
+  aspect-ratio: 1/1;
+  margin: 40px auto;
+  border-radius: 50%;
+  background-image: url(../img/ME2.png);
+  background-color: #e2f2fd;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 6px solid #ffca97;
+}
+@media screen and (min-width: 992px) {
+  .coverText .personPic_mb {
+    display: none;
+  }
+}
+.coverText .info {
+  padding-top: 40px;
+  line-height: 160%;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 991px) {
+  .coverText .info {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+}
+.coverText .special {
+  color: #00b9e2;
+}
+
+.bubbles {
+  width: 68%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+@media screen and (max-width: 991px) {
+  .bubbles {
+    display: none;
+  }
+}
+.bubbles img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+@media screen and (max-width: 991px) {
+  .bubbles img {
+    right: 50%;
+  }
+}
+.bubbles .b1 {
+  -webkit-animation: spin_pc 28s infinite linear;
+          animation: spin_pc 28s infinite linear;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .bubbles .b1 {
+    -webkit-animation: spin_mb 28s infinite linear;
+            animation: spin_mb 28s infinite linear;
+    width: 80%;
+  }
+}
+.bubbles .b2 {
+  -webkit-animation: spin_pc 20s infinite linear;
+          animation: spin_pc 20s infinite linear;
+  opacity: 0.6;
+  width: 98%;
+}
+@media screen and (max-width: 991px) {
+  .bubbles .b2 {
+    -webkit-animation: spin_mb 20s infinite linear;
+            animation: spin_mb 20s infinite linear;
+    width: 78%;
+  }
+}
+.bubbles .person {
+  width: 60%;
+  filter: drop-shadow(8px 8px 20px rgba(0, 0, 0, 0.5));
+}
+@media screen and (max-width: 991px) {
+  .bubbles .person {
+    width: 56%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@-webkit-keyframes spin_pc {
+  0% {
+    transform: translate(20%, 35%) rotate(0deg);
+  }
+  100% {
+    transform: translate(20%, 35%) rotate(360deg);
+  }
+}
+
+@keyframes spin_pc {
+  0% {
+    transform: translate(20%, 35%) rotate(0deg);
+  }
+  100% {
+    transform: translate(20%, 35%) rotate(360deg);
+  }
+}
+@-webkit-keyframes spin_mb {
+  0% {
+    transform: translate(50%, 25%) rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 25%) rotate(360deg);
+  }
+}
+@keyframes spin_mb {
+  0% {
+    transform: translate(50%, 25%) rotate(0deg);
+  }
+  100% {
+    transform: translate(50%, 25%) rotate(360deg);
+  }
+}
+.skill_wrap {
+  width: 80%;
+  padding: 120px 0 60px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skill_wrap .skillCard {
+  width: 100%;
+  border: 2px solid #ffbc7d;
+  border-radius: 8px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .skill_wrap .skillCard {
+    width: 45%;
+  }
+}
+.skill_wrap .skillCard .title {
+  color: #1d1d1d;
+  background-color: #ffbc7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.skill_wrap .skillCard .title > span {
+  font-size: 1.2rem;
+  line-height: 100%;
+}
+.skill_wrap .skillCard .label_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px;
+}
+.skill_wrap .skillCard .label_wrap .label {
+  border-radius: 100px;
+  background-color: #187dc5;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+footer span {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */

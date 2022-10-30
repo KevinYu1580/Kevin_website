@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- my style -->
+    <link rel="stylesheet" href="./css_reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="links_pc">
+            <li>
+                <a class="textHover" href="./index.html">首頁</a>
+            </li>
+            <li>
+                <a class="textHover" href="./skills.html">技能</a>
+            </li>
+            <li>
+                <a class="textHover" href="./collections.html">作品集</a>
+            </li>
+            <li>
+                <a class="textHover" href="./contact.html">聯絡方式</a>
+            </li>
+        </ul>
+        <div class="menu_mb">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mb_slider">
+            <ul>
+                <li>
+                    <a href="">
+                        首頁
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        技能
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        作品集
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        聯絡方式
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+
+
+    <div class="coverText">
+        <h1>Hi, &nbsp I'm Kevin</h1>
+        <h2>Front-End Developer</h2>
+        <div class="personPic_mb">
+        
+        </div>
+        <p class="info">於銘傳大學應用英語系畢業，憑藉著對於數位設計的熱情，參加了資展國際(資策會)開設的UI/UX前端工程師養成班，結業後投身於IT領域。
+            <br>
+            <br>
+
+            <span class="special"> &lt; coding &gt;</span>
+            <br>
+            樂於鑽研前端技術以及開發高互動性的應用，對於程式碼有極高的整潔強迫症
+            <br>
+            <br>
+
+            <span class="special"> &lt; designing &gt;</span>
+            <br>
+            注重使用者體驗，並專注於UI呈現與實用性的平衡
+            <br>
+            <br>
+
+        </p>
+    </div>
+    <div class="bubbles">
+        <img class="b1" src="./img/bubble1.svg" alt="">
+        <img class="b2" src="./img/bubble2.svg" alt="">
+        <img class="person" src="./img/ME2.png" alt="">
+    </div>
+
+
+    <footer>
+        <span>
+            Copyright &copy; 2022 Shen-Wan-Yu. &nbsp;All rights reserved.
+            
+        </span>
+    </footer>
+    
+
+    <!-- jq -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+    <script>
+
+
+        // ------menu_mb
+        // 高度
+
+
+        // 動畫
+        $('.menu_mb').click(function(){
+            $('.mb_slider').toggleClass('menuToggle')
+        })
+
+    </script>
+
+</body>
+
+</html>
