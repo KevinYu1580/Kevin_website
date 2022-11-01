@@ -358,7 +358,7 @@ nav {
   @media screen and (min-width: 1200px) {
     width: calc(80% + 40px);
   }
-  .cardGap {
+  .cardWrap {
     padding: 10px;
     width: 100%;
     @media screen and (min-width: 768px) {
@@ -381,15 +381,21 @@ nav {
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.318) ;
     }
     .coverPic {
-      background-image: url("../img/ButtonDesign.jpg");
-      background-position: 50% 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
       width: 100%;
       aspect-ratio: 16 / 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .title {
-      padding: 1rem;
+      width: 86%;
+      padding: 1rem 0;
+      margin: auto;
       font-size: 1.4rem;
       color: #fff;
       overflow: hidden;
@@ -411,11 +417,16 @@ nav {
     .briefInfo {
       font-size: 1rem;
       color: #dfdfdf;
-      padding: 0.8rem 1.2rem 1.6rem 1.2rem;
       overflow: hidden;
+      margin: 0.8rem auto 1.6rem auto;
       text-overflow: ellipsis;
-      white-space: nowrap;
       font-weight: 300;
+      width: 86%;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+      
     }
   }
 }
@@ -425,25 +436,39 @@ nav {
 .modal-title {
   font-size: 1.6rem;
 }
-.collectlink {
-  padding: 4px 8px;
-  border-radius: 10px;
-  background-color: #a0d7ff;
-  color: $text_color;
-  font-size: 1rem;
-  display: block;
-  margin: 0.8rem auto 0.2rem;
-  transition: 0.3s;
-  &:hover {
-    background-color: $secondaryColor;
-  }
-  @media screen and (min-width: 575px) {
-    margin: 1.75rem auto 0;
-    font-size: 0.9rem;
+.linkWrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: fit-content;
+  margin: auto;
+  .collectlink {
+    width: fit-content;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #a0d7ff;
+    color: $text_color;
+    font-size: 1rem;
+    display: block;
+    transition: 0.3s;
+    margin:16px auto;
+    &:hover {
+      background-color: $secondaryColor;
+    }
+    @media screen and (min-width: 575px) {
+      font-size: 0.9rem;
+    }
   }
 }
+.modal-dialog{
+  @media screen and (min-width: 576px){
+      max-width: 800px;
+  }
+}
+
 .modal-body {
   padding-top: 0;
+  margin-top: 0;
   .boxPic {
     img {
       width: 100%;
@@ -457,8 +482,9 @@ nav {
   }
   .myContent {
     margin-top: 2.4rem;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: #363636;
+    line-height: 140%;
   }
 }
 
