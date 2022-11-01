@@ -306,7 +306,7 @@ nav .menuToggle {
 }
 .skill_wrap {
   width: 80%;
-  padding: 120px 0 60px 0;
+  padding: 120px 0;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
