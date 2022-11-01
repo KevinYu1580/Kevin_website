@@ -61,11 +61,7 @@ nav {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.5);
-}
-@media screen and (max-width: 991px) {
-  nav {
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.106);
-  }
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.06);
 }
 nav .links_pc {
   display: flex;
@@ -186,11 +182,11 @@ nav .menuToggle {
   margin: 40px auto;
   border-radius: 50%;
   background-image: url(../img/ME2.png);
-  background-color: #e2f2fd;
+  background-color: rgb(244, 244, 244);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 6px solid #ffca97;
+  border: 6px solid #ffae62;
 }
 @media screen and (min-width: 992px) {
   .coverText .personPic_mb {
