@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin's Profolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- my style -->
+    <link rel="stylesheet" href="./css_reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <ul class="links_pc">
+            <li>
+                <a id="linkToIndex" class="textHover" href="#" onclick="return false">首頁</a>
+            </li>
+            <li>
+                <a id="linkToSkills" class="textHover" href="#" onclick="return false">技能</a>
+            </li>
+            <li>
+                <a id="linkToCollections" class="textHover" href="#" onclick="return false">作品集</a>
+            </li>
+            <li>
+                <a id="linkToContact" class="textHover" href="#" onclick="return false">聯絡方式</a>
+            </li>
+        </ul>
+        <div class="menu_mb">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div class="mb_slider">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        首頁
+                    </a>
+                </li>
+                <li>
+                    <a href="./skills.html">
+                        技能
+                    </a>
+                </li>
+                <li>
+                    <a href="./collections.html">
+                        作品集
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        聯絡方式
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Button trigger modal -->
+    <div class="smlProj">
+        <div class="wrap">
+            <div class="title">
+                其他小型專案:
+            </div>
+            <div class="icon">
+                <!-- 其他專案連結 -->
+                <a class="click" href="https://codepen.io/kevinyu1580" target="_blank">
+                    <i class="fa-brands fa-codepen"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="collection">
+
+        <div class="cardGap">
+            <div class="collection_card btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="coverPic">
+                </div>
+                <div class="title">
+                    <!-- 標題 -->
+                    資展國際成果發表會資展國際發表會資展國發表會資展國
+                </div>
+                <div class="divLine">
+                </div>
+                <!-- 作品連結 -->
+                <span class="link">
+                    https://www.google.com/
+                </span>
+                <!-- 使用的技術 -->
+                <div class="labelWrap">
+                    <div class="skill_label">
+                        Vue
+                    </div>
+                    <div class="skill_label">
+                        Javascript
+                    </div>
+                    <div class="skill_label">
+                        jQuery
+                    </div>
+                    <div class="skill_label">
+                        jQuery
+                    </div>
+                    <div class="skill_label">
+                        jQuery
+                    </div>
+                    <div class="skill_label">
+                        jQuery
+                    </div>
+                </div>
+
+                <div class="briefInfo">
+                    <!-- 內容 -->
+                    資展國際成果發表會資展國際成果發表會資展國際成果發表會資展國際成果發表會
+                </div>
+
+            </div>
+        </div>
+        <!-- 複製此段
+        <div class="cardGap">
+            <div class="collection_card btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="coverPic">
+                </div>
+                <div class="title">
+                    標題
+                </div>
+                <div class="divLine">
+                </div>
+                <span class="link">
+                    連結
+                </span>
+                <div class="labelWrap">
+                    <div class="skill_label">
+                        技術tag
+                    </div>
+                </div>
+
+                <div class="briefInfo">
+                    內容
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <a class="collectlink" href="#" target="blank">作品連結</a>
+                <div class="modal-body modal-dialog modal-dialog-scrollable">
+
+                    <div class="boxPic">
+                        <img src="./img/ButtonDesign.jpg" alt="">
+                    </div>
+                    <div class="labelWrap">
+
+                    </div>
+
+                    <div class="myContent">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <span>
+            Copyright &copy; 2022 Shen-Wan-Yu. &nbsp;All rights reserved.
+        </span>
+    </footer>
+
+
+    <!-- jq -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./functions.js"></script>
+
+</body>
+
+</html>

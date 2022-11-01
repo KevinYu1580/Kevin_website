@@ -14,9 +14,12 @@ html {
 }
 body {
   position: relative;
-  overflow: hidden;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle, rgb(255, 244, 219) 0%, rgb(216, 241, 255) 100%);
+  transition: 0.3s;
+  opacity: 0;
 }
 @media screen and (max-width: 991px) {
   body {
@@ -26,6 +29,26 @@ body {
 }
 body * {
   font-family: "Noto Sans TC", sans-serif;
+  opacity: 1;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+.skill_label {
+  border-radius: 100px;
+  background-color: #187dc5;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
 }
 
 nav {
@@ -35,15 +58,15 @@ nav {
   height: fit-content;
   padding: 20px 3%;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.6);
   top: 0;
   left: 0;
   z-index: 999;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 991px) {
   nav {
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.106);
   }
 }
@@ -141,7 +164,7 @@ nav .menuToggle {
   margin: 20px 0;
 }
 .coverText h1 {
-  font-family: "Arvo", serif;
+  font-family: "Kanit", sans-serif;
   font-size: 5rem;
   color: #ff7b00;
 }
@@ -327,11 +350,194 @@ nav .menuToggle {
   gap: 6px;
   padding: 10px;
 }
-.skill_wrap .skillCard .label_wrap .label {
-  border-radius: 100px;
-  background-color: #187dc5;
+
+.smlProj {
+  padding-top: 120px;
+  width: 80%;
+  margin: auto;
+}
+.smlProj .wrap {
+  background-color: #c6c6c6;
+  border-radius: 10px;
+  padding: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.4rem;
+}
+.smlProj .wrap .title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.6rem;
+}
+.smlProj .wrap .icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.smlProj .wrap .icon .click {
+  padding: 0.5rem;
+  background-color: #003c66;
+  font-size: 2rem;
+  color: rgb(229, 229, 229);
+  border-radius: 8px;
+}
+
+.collection {
+  padding: 10px 0;
+  margin: auto;
+  width: calc(80% + 20px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1200px) {
+  .collection {
+    width: calc(80% + 40px);
+  }
+}
+.collection .cardGap {
+  padding: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .collection .cardGap {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .collection .cardGap {
+    width: 33.333333%;
+    padding: 20px;
+  }
+}
+.collection .collection_card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  background-color: #72685b;
+  transition: 0.3s;
+}
+.collection .collection_card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.318);
+}
+.collection .collection_card .coverPic {
+  background-image: url("../img/ButtonDesign.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.collection .collection_card .title {
+  padding: 1rem;
+  font-size: 1.4rem;
   color: #fff;
-  padding: 0.6rem 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.collection .collection_card .divLine {
+  width: 70%;
+  height: 1px;
+  background-color: #c6c6c6;
+  margin: auto;
+}
+.collection .collection_card .link {
+  display: none;
+}
+.collection .collection_card .labelWrap {
+  display: none;
+}
+.collection .collection_card .briefInfo {
+  font-size: 1rem;
+  color: #dfdfdf;
+  padding: 0.8rem 1.2rem 1.6rem 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 300;
+}
+
+.modal-title {
+  font-size: 1.6rem;
+}
+
+.collectlink {
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: #a0d7ff;
+  color: #2d2d2d;
+  font-size: 1rem;
+  display: block;
+  margin: 0.8rem auto 0.2rem;
+  transition: 0.3s;
+}
+.collectlink:hover {
+  background-color: #5cbbff;
+}
+@media screen and (min-width: 575px) {
+  .collectlink {
+    margin: 1.75rem auto 0;
+    font-size: 0.9rem;
+  }
+}
+
+.modal-body {
+  padding-top: 0;
+}
+.modal-body .boxPic img {
+  width: 100%;
+}
+.modal-body .labelWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  gap: 6px;
+}
+.modal-body .myContent {
+  margin-top: 2.4rem;
+  font-size: 1.25rem;
+  color: #363636;
+}
+
+.contact {
+  width: 80%;
+  padding-top: 10rem;
+  margin: auto;
+}
+.contact * {
+  word-break: break-all;
+}
+.contact a {
+  color: #187dc5;
+}
+.contact .title {
+  font-weight: 600;
+  font-size: 3.6rem;
+  font-family: "Kanit", sans-serif;
+  color: #ff7b00;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid #e9ceb6;
+}
+.contact .info {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #2d2d2d;
+  font-size: 1.4rem;
+  padding: 1.2rem 0;
+}
+.contact .info .icon {
+  font-size: 3rem;
 }
 
 footer {
@@ -348,4 +554,5 @@ footer {
 footer span {
   color: #a0a0a0;
   font-size: 0.9rem;
+  font-family: "Kanit", sans-serif;
 }/*# sourceMappingURL=style.css.map */

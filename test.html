@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        .test{
+        .test {
             position: relative;
             bottom: 0;
             width: 400px;
@@ -19,22 +18,23 @@
             background-size: cover;
             background-position: 50% 50%;
         }
-        .testdiv{
-            margin:200px auto 0 ;
+
+        .testdiv {
+            margin: 200px auto 0;
             width: fit-content;
-      
+
         }
     </style>
 
 </head>
 
 <body>
-<!-- <div class="test"> -->
+    <!-- <div class="test"> -->
     <div class="testdiv">
         123
     </div>
 
-</div>
+    </div>
 
 
 
@@ -43,7 +43,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
- 
+
+    <script type="module">
+        import { Octokit, App } from "https://cdn.skypack.dev/octokit";
+
+        const octokit = new Octokit({ });
+
+        await octokit.request("GET /octocat", {});
+
+
+    </script>
+
 </body>
 
 </html>

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kevin's Profolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <!-- font awesome -->
@@ -33,16 +33,16 @@
     <nav>
         <ul class="links_pc">
             <li>
-                <a class="textHover" href="./index.html">首頁</a>
+                <a id="linkToIndex" class="textHover" href="#" onclick="return false">首頁</a>
             </li>
             <li>
-                <a class="textHover" href="./skills.html">技能</a>
+                <a id="linkToSkills" class="textHover" href="#" onclick="return false">技能</a>
             </li>
             <li>
-                <a class="textHover" href="./collections.html">作品集</a>
+                <a id="linkToCollections" class="textHover" href="#" onclick="return false">作品集</a>
             </li>
             <li>
-                <a class="textHover" href="./contact.html">聯絡方式</a>
+                <a id="linkToContact" class="textHover" href="#" onclick="return false">聯絡方式</a>
             </li>
         </ul>
         <div class="menu_mb">
@@ -53,34 +53,34 @@
         <div class="mb_slider">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="./index.html">
                         首頁
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="./skills.html">
                         技能
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="./collections.html">
                         作品集
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="./contact.html">
                         聯絡方式
                     </a>
                 </li>
             </ul>
         </div>
-        
+
     </nav>
 
 
 
     <div class="coverText">
-        <h1>Hi, &nbsp I'm Kevin</h1>
+        <h1>Hi, I'm Kevin</h1>
         <h2>Front-End Developer</h2>
         <div class="personPic_mb">
         
@@ -124,19 +124,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
-    <script>
-
-
-        // ------menu_mb
-        // 高度
-
-
-        // 動畫
-        $('.menu_mb').click(function(){
-            $('.mb_slider').toggleClass('menuToggle')
-        })
-
-    </script>
+    <script src="./functions.js"></script>
 
 </body>
 
