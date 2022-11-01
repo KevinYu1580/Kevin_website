@@ -63,6 +63,5 @@ $(".collection_card").click(function () {
   if(linkAry.length < 2){
     $('.linkWrap .collectlink').text('作品連結')
   }
-  
 });
 

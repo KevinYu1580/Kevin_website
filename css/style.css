@@ -120,13 +120,14 @@ nav .mb_slider ul {
   flex-direction: column;
 }
 nav .mb_slider li {
-  padding: 20px 0;
   list-style-type: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.22);
   width: 80%;
   text-align: center;
 }
 nav .mb_slider li a {
+  display: block;
+  padding: 20px 0;
   color: #fff;
   font-size: 1.2rem;
   font-weight: 300;

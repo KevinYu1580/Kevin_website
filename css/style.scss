@@ -118,12 +118,13 @@ nav {
       flex-direction: column;
     }
     li {
-      padding: 20px 0;
       list-style-type: none;
       border-bottom: 1px solid rgba(255, 255, 255, 0.22);
       width: 80%;
       text-align: center;
       a {
+        display: block;
+        padding: 20px 0;
         color: #fff;
         font-size: 1.2rem;
         font-weight: 300;
