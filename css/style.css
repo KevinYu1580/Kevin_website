@@ -14,9 +14,7 @@ html {
 }
 body {
   position: relative;
-  width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   background: radial-gradient(circle, rgb(255, 244, 219) 0%, rgb(216, 241, 255) 100%);
   transition: 0.3s;
   opacity: 0;
@@ -29,7 +27,6 @@ body {
 }
 body * {
   font-family: "Noto Sans TC", sans-serif;
-  opacity: 1;
 }
 
 body::-webkit-scrollbar {
@@ -321,7 +318,7 @@ nav .menuToggle {
 }
 .skill_wrap .skillCard {
   width: 100%;
-  border: 2px solid #ffbc7d;
+  border: 2px solid #72685b;
   border-radius: 8px;
   margin: 16px 0;
   overflow: hidden;
@@ -332,8 +329,8 @@ nav .menuToggle {
   }
 }
 .skill_wrap .skillCard .title {
-  color: #1d1d1d;
-  background-color: #ffbc7d;
+  color: rgb(239, 239, 239);
+  background-color: #72685b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,7 +389,7 @@ nav .menuToggle {
 }
 
 .collection {
-  padding: 10px 0;
+  padding: 10px 0 120px;
   margin: auto;
   width: calc(80% + 20px);
   display: flex;
@@ -522,8 +519,14 @@ nav .menuToggle {
 }
 
 .modal-body {
-  padding-top: 0;
   margin-top: 0;
+  padding: 0 1rem 1rem 1rem;
+  padding-top: 0;
+}
+@media screen and (min-width: 992px) {
+  .modal-body {
+    padding: 0rem 2rem 2rem 2rem;
+  }
 }
 .modal-body .boxPic img {
   width: 100%;

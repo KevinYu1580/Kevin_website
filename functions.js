@@ -7,8 +7,7 @@ $(document).ready(function(){
 
 function changeURL(x, y) {
   $(x).click(function () {
-    $('body')
-      .css("opacity", "0")
+    $('body').css("opacity", "0")
       .then(
         setTimeout(() => {
           location.href = y;
@@ -16,10 +15,14 @@ function changeURL(x, y) {
       );
   });
 }
-changeURL("#linkToIndex", "./index.html");
-changeURL("#linkToSkills", "./skills.html");
-changeURL("#linkToCollections", "./collections.html");
-changeURL("#linkToContact", "./contact.html");
+changeURL("#linkToIndex_pc", "./index.html");
+changeURL("#linkToSkills_pc", "./skills.html");
+changeURL("#linkToCollections_pc", "./collections.html");
+changeURL("#linkToContact_pc", "./contact.html");
+changeURL("#linkToIndex_mb", "./index.html");
+changeURL("#linkToSkills_mb", "./skills.html");
+changeURL("#linkToCollections_mb", "./collections.html");
+changeURL("#linkToContact_mb", "./contact.html");
 
 
 // Menu_mb動畫

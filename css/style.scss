@@ -7,6 +7,7 @@ $primeColor_dark: #e9ceb6;
 $primeColor_light: #ffbc7d;
 $secondaryColor: #5cbbff;
 $secondaryColor_dark: #187dc5;
+$darkBrown:#72685b;
 
 html {
   font-size: 14px;
@@ -24,9 +25,7 @@ html {
 
 body {
   position: relative;
-  width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   background: radial-gradient(circle, rgb(255, 244, 219) 0%, rgb(216, 241, 255) 100%);
   transition: 0.3s;
   opacity:0;
@@ -36,7 +35,6 @@ body {
   }
   * {
     font-family: $fontFamily_text;
-    opacity: 1;
   }
 }
 // 隱藏滾動條
@@ -281,7 +279,7 @@ nav {
   gap: 20px;
   .skillCard {
     width: 100%;
-    border: 2px solid $primeColor_light;
+    border: 2px solid $darkBrown;
     border-radius: 8px;
     margin: 16px 0;
     overflow: hidden;
@@ -289,8 +287,8 @@ nav {
       width: 45%;
     }
     .title {
-      color: #1d1d1d;
-      background-color: $primeColor_light;
+      color: rgb(239, 239, 239);
+      background-color: $darkBrown;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -349,7 +347,7 @@ nav {
 
 }
 .collection {
-  padding: 10px 0;
+  padding: 10px 0 120px;
   margin: auto;
   width: calc(80% + 20px);
   display: flex;
@@ -374,7 +372,7 @@ nav {
     border-radius: 10px;
     overflow: hidden;
     padding: 0;
-    background-color: #72685b;
+    background-color:$darkBrown;
     transition: 0.3s;
     &:hover {
       transform: translateY(-12px);
@@ -467,8 +465,12 @@ nav {
 }
 
 .modal-body {
-  padding-top: 0;
   margin-top: 0;
+  padding: 0 1rem 1rem 1rem;
+  padding-top: 0;
+  @media screen and (min-width: 992px){
+    padding: 0rem 2rem 2rem 2rem;
+  }
   .boxPic {
     img {
       width: 100%;
